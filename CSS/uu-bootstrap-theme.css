@@ -2,18 +2,9 @@
     UU Bootstrap Theme
 ***********************************/
 
-/***************************
-   Buttons
-***************************/
-button {
-  border-radius: 0;
-}
-
 /****************************
-    Form
+      Links
 ****************************/
-input,
-select, 
-textarea {
-    border-radius: 0;
+a {
+  text-decoration: underline;
 }
