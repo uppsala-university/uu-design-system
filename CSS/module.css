@@ -1,3 +1,17 @@
 /**********************************
     Modules
 ***********************************/
+
+/* Header */
+.uu-link-img {
+    width: 125px;
+}
+
+/* Navigation */
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-sub-menu {
+    padding-left: 1.5em;
+}
