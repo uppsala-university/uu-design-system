@@ -17,6 +17,7 @@ body {
  /***************************
     Buttons
  ***************************/
+ /*
  button {
    background: #333;
    border: 1px solid #fff;
@@ -26,20 +27,17 @@ body {
    padding: .75rem 1rem;
  }
  
+
  button:hover {
    background: #555;
  } 
  
  button:active {
  } 
- 
+ */
  /***************************
     Links
  ***************************/
  a {
    color: #0555a4;
- }
- 
- p a {
-   font-weight: bold;
  }
