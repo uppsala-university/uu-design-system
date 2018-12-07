@@ -7,6 +7,12 @@
     width: 125px;
 }
 
+.site-header-text {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 /* Navigation */
 .nav-link {
     text-decoration: none;
