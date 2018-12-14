@@ -8,7 +8,7 @@
 }
 
 .site-header-text {
-    color: #333;
+    color: var(--color-grey-dark);
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -20,4 +20,26 @@
 
 .nav-sub-menu {
     padding-left: 1.5em;
+}
+
+/* Button variants - should this move to CSS State?! */
+.button-danger,
+.button-danger:hover {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.button-success,
+.button-success:hover {
+  background-color: var(--color-success);
+  border-color:var(--color-success);
+}
+
+.button-outline {
+  background-color: #fff;
+  color: #000;
+}
+
+.button-outline:hover {
+  color: #fff;
 }
