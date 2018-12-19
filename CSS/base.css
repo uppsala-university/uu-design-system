@@ -38,17 +38,19 @@ button,
 .button,
 button:hover,
 .button:hover {
-  background: var(--color-grey-dark);
-  border: 3px solid var(--color-grey-dark);
+  background-color: var(--color-link);
+  border: 3px solid var(--color-link);
   border-radius: 4px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
+  letter-spacing: .05em;
   padding: .4rem .8rem; 
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: filter 200ms ease-in-out, 
                 transform 150ms ease;
     -webkit-appearance: none;
@@ -57,7 +59,7 @@ button:hover,
 
 button:hover,
 .button:hover {
-  filter: contrast(3);
+  opacity: .8;
 }
 
 /***************************

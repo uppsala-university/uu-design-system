@@ -37,9 +37,20 @@
 
 .button-outline {
   background-color: #fff;
-  color: #000;
+  color: var(--color-link);
 }
 
 .button-outline:hover {
   color: #fff;
 }
+
+.button-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-link);
+}
+
+.button-text:hover {
+    color: #fff;
+  }
+  
