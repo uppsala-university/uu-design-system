@@ -51,9 +51,16 @@
 .button-danger:hover {
     background-color: var(--color-danger);
     border-color: var(--color-danger);
+    color: #fff;
 }
 
-.button-danger.button-outline:not(:hover),
+.button-danger.button-outline:not(:hover) {
+    background-color: transparent;
+    color: var(--color-danger);
+}
+
 .button-danger.button-text:not(:hover) {
+    background-color: transparent;
+    border-color: transparent;
     color: var(--color-danger);
 }
