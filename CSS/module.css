@@ -22,35 +22,37 @@
     padding-left: 1.5em;
 }
 
-/* Button variants - should this move to CSS State?! */
-.button-danger,
-.button-danger:hover {
-  background-color: var(--color-danger);
-  border-color: var(--color-danger);
-}
-
-.button-success,
-.button-success:hover {
-  background-color: var(--color-success);
-  border-color:var(--color-success);
-}
-
+/**********************************
+     Button variants 
+**********************************/
+/* Outlined buttons */
 .button-outline {
-  background-color: #fff;
-  color: var(--color-link);
+    background-color: #fff;
+    color: var(--color-link);
 }
 
 .button-outline:hover {
-  color: #fff;
+    color: #fff;
 }
 
+/* Text buttons */
 .button-text {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--color-link);
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-link);
 }
 
 .button-text:hover {
     color: #fff;
-  }
-  
+}
+
+/* Dangerous buttons */
+.button-danger,
+.button-danger:hover {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.button-danger.button-outline:not(:hover) {
+    color: var(--color-danger);
+}
