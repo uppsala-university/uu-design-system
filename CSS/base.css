@@ -13,10 +13,42 @@
 
 body {
   font-family: 'Helvetica Neue', Arial, Sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
+/***************************
+  Headlines, paragraphs etc.
+***************************/
+h1, h2, h3, h4, h5, h6 {
+   margin-bottom: .5rem;
+   line-height: 1.5;
+}
+
+h1 {
+	font-size: 2rem;
+} 
+
+h2 {
+	font-size: 1.6rem;
+} 
+
+h3 {
+	font-size: 1.3rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+dl, ol ,ul {
+	margin-bottom: 1.5rem;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
 /***************************
   Focus
 ***************************/
