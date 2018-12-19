@@ -53,6 +53,7 @@
     border-color: var(--color-danger);
 }
 
-.button-danger.button-outline:not(:hover) {
+.button-danger.button-outline:not(:hover),
+.button-danger.button-text:not(:hover) {
     color: var(--color-danger);
 }
