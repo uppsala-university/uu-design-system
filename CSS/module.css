@@ -2,10 +2,20 @@
     Modules
 ***********************************/
 /* Left column */
-.layout-left {
+.column-left {
     box-shadow: 0 0 10px #ccc;
     height: 100vh;
     text-align: center;
+}
+
+.toolbar {
+    z-index: 1;
+    position: relative;
+}
+
+.toolbar + .column-left {
+    margin-top: -30px;
+    padding-top: 30px;
 }
 
 /* Header */
@@ -33,6 +43,11 @@
 }
 
 /* Navigation */
+.nav {
+    display: block;
+    width: 100%;
+}
+
 .nav-link {
     text-decoration: none;
 }

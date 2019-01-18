@@ -26,7 +26,7 @@
 	<body <?php body_class(); ?>>
     
         <!-- Toolbar top -->
-        <div class="background-dark">
+        <div class="background-dark toolbar">
             <div class="container">
                 <div class="row align-items-center">
                     <a href="#maincontent" class="sr-only sr-only-focusable">Hoppa till huvudinnehållet</a>
