@@ -96,6 +96,11 @@ button:hover,
   opacity: .8;
 }
 
+button:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: -1px;
+}
+
 /***************************
   Links
 ***************************/
