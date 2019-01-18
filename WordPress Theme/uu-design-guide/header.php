@@ -45,7 +45,7 @@
         </div>
         
         <!-- Left column -->
-        <div class="col-md-3 background-dark position-fixed column-left">
+        <div class="col-md-3 background-light position-fixed column-left">
             <!-- Header -->
             <header id="top">
                 <a href="https://www.uu.se" class="uu-link">
