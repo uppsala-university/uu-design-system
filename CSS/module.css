@@ -1,15 +1,34 @@
 /**********************************
     Modules
 ***********************************/
+/* Left column */
+.layout-left {
+    box-shadow: 0 0 10px #ccc;
+    height: 100vh;
+    text-align: center;
+}
 
 /* Header */
 .uu-link-img {
-    width: 125px;
+	margin-top: 1em;
+	width: 150px;
+}
+
+.site-header {
+    margin: 1em 0;
+    border-bottom: .5px solid #000;
+    padding-bottom: 1em;
+}
+
+.background-dark .site-header {
+	border-color: #fff;	
 }
 
 .site-header-text {
     color: var(--color-grey-dark);
+    font-family: serif;
     font-size: 1.5rem;
+    letter-spacing: .1em;
     text-decoration: none;
 }
 
