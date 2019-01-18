@@ -1,3 +1,66 @@
 /**********************************
     Modules
 ***********************************/
+
+/* Header */
+.uu-link-img {
+    width: 125px;
+}
+
+.site-header-text {
+    color: var(--color-grey-dark);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Navigation */
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-sub-menu {
+    padding-left: 1.5em;
+}
+
+/**********************************
+     Button variants 
+**********************************/
+/* Outlined buttons */
+.button-outline {
+    background-color: #fff;
+    color: var(--color-link);
+}
+
+.button-outline:hover {
+    color: #fff;
+}
+
+/* Text buttons */
+.button-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-link);
+}
+
+.button-text:hover {
+    color: #fff;
+}
+
+/* Dangerous buttons */
+.button-danger,
+.button-danger:hover {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+    color: #fff;
+}
+
+.button-danger.button-outline:not(:hover) {
+    background-color: transparent;
+    color: var(--color-danger);
+}
+
+.button-danger.button-text:not(:hover) {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-danger);
+}

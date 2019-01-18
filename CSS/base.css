@@ -1,45 +1,111 @@
 /***************************
    Base style
 ***************************/
-body {
-   font-family: 'Helvetica Neue', Arial, Sans-serif;
-   font-size: 16px;
-   line-height: 1.5;
- }
+:root {
+	--color-grey-dark: #333333;
+	--color-grey: #e5e5e5;
+	--color-grey-light: #f2f2f2;
+	--color-link: #0555a4;
+  --color-focus: #89b9ea;
+  --color-danger: #990000;
+  --color-success: #00700F;
+}
 
- /***************************
-   Focus
+body {
+  font-family: 'Helvetica Neue', Arial, Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/***************************
+  Headlines, paragraphs etc.
+***************************/
+h1, h2, h3, h4, h5, h6 {
+   margin-bottom: .5rem;
+   line-height: 1.5;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2rem;
+} 
+
+h2 {
+	font-size: 1.6rem;
+} 
+
+h3 {
+	font-size: 1.3rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+dl, ol ,ul {
+	margin-bottom: 1.5rem;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+/***************************
+  Focus
 ***************************/
 :focus {
-   outline: 3px solid #89b9ea;;
- }
- 
- /***************************
-    Buttons
- ***************************/
- button {
-   background: #333;
-   border: 1px solid #fff;
-   color: #fff;
-   cursor: pointer;
-   font-size: 1rem;
-   padding: .75rem 1rem;
- }
- 
- button:hover {
-   background: #555;
- } 
- 
- button:active {
- } 
- 
- /***************************
-    Links
- ***************************/
- a {
-   color: #0555a4;
- }
- 
- p a {
-   font-weight: bold;
- }
+  outline: 3px solid var(--color-focus);;
+}
+
+/***************************
+  Links
+***************************/
+a {
+  color: var(--color-link);
+}
+
+/***************************
+  Buttons
+***************************/
+button, 
+.button,
+button:hover,
+.button:hover {
+  background-color: var(--color-link);
+  border: 3px solid var(--color-link);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: .05em;
+  padding: .4rem .8rem; 
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: filter 200ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+.button:hover {
+  opacity: .8;
+}
+
+button:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: -1px;
+}
+
+/***************************
+  Links
+***************************/
+input {
+  border: 1px solid #000;
+  font-size: 1rem;
+  padding: .7rem 1rem;
+}

@@ -1,0 +1,20 @@
+/**********************************
+    Module color
+***********************************/
+.background-dark {
+    background-color: #333;
+}
+
+.background-dark,
+.background-dark a {
+    color: #fff;
+}
+
+.background-light {
+    background-color: #f2f2f2;
+}
+
+.background-light,
+.background-light a {
+    color: #000;
+}
