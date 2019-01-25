@@ -5,6 +5,7 @@
 .column-left {
     box-shadow: 0 0 10px #ccc;
     height: 100vh;
+    overflow-x: scroll;
     text-align: center;
 }
 
@@ -45,6 +46,7 @@
 /* Navigation */
 .nav {
     display: block;
+    margin-bottom: 1em;
     width: 100%;
 }
 
@@ -53,7 +55,8 @@
 }
 
 .nav-sub-menu {
-    padding-left: 1.5em;
+    border:  .5px solid #000;
+    padding-left: 0;
 }
 
 /**********************************
