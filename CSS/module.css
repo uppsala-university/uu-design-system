@@ -194,6 +194,18 @@
      background-image: url('http://files.webb.uu.se/uploader/1650/outline-clear-24px-white.svg')
 }
 
+.icon-attach::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-attach-file-24px-white.svg')
+}
+
+.icon-cancel::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-cancel-24px-white.svg')
+}
+
+.icon-delete::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-delete-24px-white.svg')
+}
+
 .icon-menu::before {
     background-image: url('http://files.webb.uu.se/uploader/1650/outline-menu-24px-white.svg')
 }
