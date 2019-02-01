@@ -101,3 +101,131 @@
     border-color: transparent;
     color: var(--color-danger);
 }
+
+/* Buttons with icons */
+/* Buttons with icons */
+.button-icon::before {
+    content: ' ';
+    width: 24px;
+    display: inline-block;
+    margin-right: 8px;
+    height: 24px;
+    background-size: 24px;
+    vertical-align: bottom;
+}
+
+.button-icon-right::after {
+    content: ' ';
+    width: 24px;
+    display: inline-block;
+    margin-left: 8px;
+    height: 24px;
+    background-size: 24px;
+    vertical-align: bottom;
+}
+
+/* Buttons without text */
+.button-icon:empty::before,
+.button-icon-right:empty::after {
+    margin: 0;
+}
+
+/* Blue icons for outlined and text buttons */
+.button-outline.button-icon:not(:hover)::before,
+.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.3) sepia(.5) hue-rotate(170deg) saturate(9);
+}
+
+/* Red icons for danger buttons  */
+.button-danger.button-outline.button-icon:not(:hover)::before,
+.button-danger.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.2) sepia(1) hue-rotate(0deg) saturate(16);
+}
+
+/* Icons */
+
+/* What does the arrows mean? Change the class names according to that */
+.icon-up-circle::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-circle-chevron-up-24px-white.svg);
+}
+
+.icon-down-circle::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-circle-chevron-down-24px-white.svg);
+}
+
+/* Arrows to the right can be positioned before or after */
+.icon-right-circle::after,
+.icon-right-circle::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-circle-chevron-right-24px-white.svg);
+}
+
+.icon-left-circle::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-circle-chevron-left-24px-white.svg);
+}
+
+.icon-up::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-chevron-up-24px-white.svg);
+}
+
+/* Arrows to the right can be positioned before or after */
+.icon-right::after,
+.icon-right::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-chevron-right-24px-white.svg);
+}
+
+.icon-down::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-chevron-down-24px-white.svg);
+}
+
+.icon-left::before {
+    background-image:  url(http://files.webb.uu.se/uploader/1650/outline-chevron-left-24px-white.svg);
+}
+
+/* What does plus and minus mean? Change the class names according to that */
+.icon-plus::before {
+      background-image: url(http://files.webb.uu.se/uploader/1650/plus-circle-outline-24px-white.svg);
+}
+
+.icon-minus::before {
+      background-image: url(http://files.webb.uu.se/uploader/1650/minus-circle-outline-24px-white.svg);
+}
+
+.icon-clear::before {
+     background-image: url(http://files.webb.uu.se/uploader/1650/outline-clear-24px-white.svg)
+}
+
+.icon-menu::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-menu-24px-white.svg)
+}
+
+.icon-listen::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-headset-24px-white.svg)
+}
+
+.icon-language::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-language-24px.svg)
+}
+
+.icon-profile::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/baseline-people-24px.svg)
+}
+
+.icon-settings::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-settings-24px.svg)
+}
+
+.icon-edit::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-edit-24px-white.svg)
+}
+
+.icon-like::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-favorite-border-24px-white.svg)
+}
+
+.icon-star::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/outline-star-24px.svg)
+}
+
+.icon-star-filled::before {
+    background-image: url(http://files.webb.uu.se/uploader/1650/baseline-star-24px.svg)
+}
