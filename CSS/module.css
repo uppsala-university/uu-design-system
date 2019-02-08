@@ -58,7 +58,9 @@
 .nav-sub-menu {
     padding-left: 1.5em;
 }
-
+.current-menu-item .nav-link{
+	font-weight: 500;
+}
 /**********************************
      Button variants 
 **********************************/
