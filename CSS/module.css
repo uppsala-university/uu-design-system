@@ -58,9 +58,11 @@
 .nav-sub-menu {
     padding-left: 1.5em;
 }
+
 .current-menu-item .nav-link{
 	font-weight: 500;
 }
+
 /**********************************
      Button variants 
 **********************************/
@@ -105,25 +107,24 @@
 }
 
 /* Buttons with icons */
-/* Buttons with icons */
 .button-icon::before {
-    content: ' ';
-    width: 24px;
-    display: inline-block;
-    margin-right: 8px;
-    height: 24px;
     background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-right: 8px;
     vertical-align: bottom;
+    width: 24px;
 }
 
 .button-icon-right::after {
-    content: ' ';
-    width: 24px;
-    display: inline-block;
-    margin-left: 8px;
-    height: 24px;
     background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-left: 8px;
     vertical-align: bottom;
+    width: 24px;
 }
 
 /* Buttons without text */
@@ -242,4 +243,37 @@
 
 .icon-star-filled::before {
     background-image: url('http://files.webb.uu.se/uploader/1650/baseline-star-24px.svg')
+}
+
+/**********************************
+     Forms 
+**********************************/
+.form-group {
+    margin-bottom: 1em;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.label-required::after {
+    content: ' *';
+    color: var(--color-danger);
+}
+
+.form-errors-list {
+    color: var(--color-danger);
+    list-style: none;
+    padding: 0;
+}
+
+.form-input-success {
+  background-color: #DFF0D8; /* create variable */
+  border-color: #D6E9C6; /* create variable */
+}
+
+.form-input-error {
+  background-color: #F2DEDE; /* create variable */
+  border-color: #EED3D7; /* create variable */
 }
