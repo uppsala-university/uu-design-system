@@ -7,7 +7,7 @@
 		// DOM ready, take it away
 
 		// Toggle function
-		$('.toggle').on('click', function(){
+		$('.js-button-toggle').on('click', function(){
 			var controlledElementSelector = '#' + $(this).attr('aria-controls');
 			if ($(this).attr('aria-expanded') == 'false') {
 				$(this).attr('aria-expanded', 'true');
