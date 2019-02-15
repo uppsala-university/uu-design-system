@@ -4,9 +4,15 @@
 /* Left column */
 .column-left {
     box-shadow: 0 0 10px #ccc;
-    height: 100vh;
-    overflow-x: scroll;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .column-left {
+        height: 100vh;
+        overflow-x: scroll;
+        position: fixed;
+    }    
 }
 
 .toolbar {
@@ -269,11 +275,11 @@
 }
 
 .form-input-success {
-  background-color: #DFF0D8; /* create variable */
-  border-color: #D6E9C6; /* create variable */
+    background-color: #DFF0D8; /* create variable */
+    border-color: #D6E9C6; /* create variable */
 }
 
 .form-input-error {
-  background-color: #F2DEDE; /* create variable */
-  border-color: #EED3D7; /* create variable */
+    background-color: #F2DEDE; /* create variable */
+    border-color: #EED3D7; /* create variable */
 }
