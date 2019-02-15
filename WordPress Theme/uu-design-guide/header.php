@@ -69,7 +69,10 @@
                 </div>*/ ?>
             </header>
             <!-- Navigation -->
-            <nav class="nav" aria-label="Huvudmeny">
+            <button class="js-button-toggle button-icon icon-menu d-md-none mb-3" type="button" aria-controls="nav-main" aria-expanded="false">
+                Meny
+            </button>
+            <nav id="nav-main" class="nav d-none d-md-block d-lg-block d-xl-block" aria-label="Huvudmeny">
                 <?php html5blank_nav(); ?>
             </nav>
         </div>
