@@ -62,7 +62,7 @@
 .current-menu-item .nav-link{
 	font-weight: 500;
 }
-.current-menu-item .nav-link ul li .nav-link{
+.current-menu-item ul li a.nav-link{
 	font-weight: 300;
 }
 
