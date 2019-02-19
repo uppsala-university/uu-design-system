@@ -42,8 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2rem;
-} 
+  border-bottom: .5px solid #000;
+  font-family: "BerlingRoman", serif;
+  font-size: 2rem;
+  margin-bottom: .75em;
+  padding-bottom: .25em;
+}
 
 h2 {
 	font-size: 1.6rem;
