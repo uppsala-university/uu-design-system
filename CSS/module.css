@@ -68,6 +68,9 @@
 .current-menu-item .nav-link{
 	font-weight: 500;
 }
+.current-menu-item ul li a.nav-link{
+	font-weight: 300;
+}
 
 /**********************************
      Button variants 
