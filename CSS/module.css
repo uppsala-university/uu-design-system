@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .column-left {
         height: 100vh;
         overflow-x: scroll;
