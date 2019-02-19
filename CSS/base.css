@@ -18,6 +18,20 @@ body {
   line-height: 1.5;
 }
 
+/****************************
+      Font
+****************************/
+@font-face {
+	font-family: "BerlingRoman";
+	src: url("https://files.webb.uu.se/uploader/1650/berlingroman-webfonteot.eot");
+	src: url("https://files.webb.uu.se/uploader/1650/berlingroman-webfonteot.eot#iefix") format("embedded-opentype"),
+	 url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontwoff.woff") format("woff"),
+	 url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontttf.ttf") format("truetype"),
+	 url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontsvg.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /***************************
   Headlines, paragraphs etc.
 ***************************/

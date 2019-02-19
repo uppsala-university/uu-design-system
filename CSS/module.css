@@ -43,9 +43,9 @@
 
 .site-header-text {
     color: var(--color-grey-dark);
-    font-family: serif;
+    font-family: "BerlingRoman", serif;
     font-size: 1.5rem;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     text-decoration: none;
 }
 
