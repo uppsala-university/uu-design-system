@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.column-left nav {
+    padding-bottom: 1.5em;
+}
+
 .toolbar {
     position: relative;
     z-index: 1;
@@ -44,7 +48,6 @@
 /* Navigation */
 .nav {
     display: block;
-    margin-bottom: 1em;
     text-align: left;
     width: 100%;
 }
