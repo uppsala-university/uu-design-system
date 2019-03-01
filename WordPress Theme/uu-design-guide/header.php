@@ -25,7 +25,7 @@
 	</head>
 	<body <?php body_class(); ?>>
     
-        <!-- Toolbar top -->
+        <!-- Toolbar top
         <div class="background-dark toolbar">
             <div class="container">
                 <div class="row align-items-center">
@@ -43,13 +43,14 @@
                 </div>
             </div>
         </div>
+        -->
         
         <!-- Left column -->
-        <div class="col-md-3 background-light column-left">
+        <div class="col-md-3 background-dark column-left">
             <!-- Header -->
             <header id="top">
                 <a href="https://www.uu.se" class="uu-link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/uu-logo.svg" class="uu-link-img" alt="Uppsala universitet">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/UU-logo-white.svg" class="uu-link-img" alt="Uppsala universitet">
                 </a>
                 <div class="site-header">
                     <a href="designsystem.webb.uu.se" class="site-header-text"><?php echo get_bloginfo( 'name' ); ?></a>
