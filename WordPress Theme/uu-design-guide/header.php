@@ -54,7 +54,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/UU-logo-white.svg" class="uu-link-img" alt="Uppsala universitet">
                         </a>
                         <div class="site-header">
-                            <a href="<?php get_home_url() ?>" class="site-header-text"><?php echo get_bloginfo( 'name' ); ?></a>
+                            <a href="<?php echo esc_url( home_url() ); ?>" class="site-header-text"><?php echo get_bloginfo( 'name' ); ?></a>
                         </div>
                         <!-- Search is removed until needed -->
                         <?php /*<div role="search">
