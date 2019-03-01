@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  	<div class="md-9 offset-md-3 pl-4 pr-4 pt-4 mb-5">
+  	<div class="col-md-9 pl-4 pr-4 pt-4 mb-5">
 		<main>
 			<!-- section -->
 			<section>
