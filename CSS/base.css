@@ -63,13 +63,18 @@ h4 {
 	font-weight: bold;
 }
 
-dl, ol ,ul {
+dl, ol, ul {
 	margin-bottom: 1.5rem;
 }
 
 p {
 	margin-bottom: 1.5rem;
 }
+
+p, dl, ol, ul {
+  max-width: 800px;
+}
+
 /***************************
   Focus
 ***************************/
