@@ -194,6 +194,18 @@
     background-image: url('http://files.webb.uu.se/uploader/1650/outline-chevron-left-24px-white.svg');
 }
 
+/* Previous/back and next buttons */
+.icon-next::after,
+.icon-next::before {
+    /* Arrows to the right can be positioned before or after */
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-arrow-forward-24px-white.svg');
+}
+
+.icon-back::before,
+.icon-previous::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-arrow-back-24px-white.svg');
+}
+
 /* What does plus and minus mean? Change the class names according to that */
 .icon-plus::before {
       background-image: url('http://files.webb.uu.se/uploader/1650/plus-circle-outline-24px-white.svg');
