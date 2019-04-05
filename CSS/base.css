@@ -125,10 +125,12 @@ button:focus {
     outline-offset: -1px;
 }
 
-button:disabled {
+button[disabled] {
   background-color: var(--color-grey) !important;
   border-color: var(--color-grey) !important;
   color: var(--color-grey-dark) !important;
+  cursor: default;
+  opacity: 1;
 }
 
 /***************************
