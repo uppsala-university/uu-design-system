@@ -117,12 +117,18 @@ button:hover,
 
 button:hover,
 .button:hover {
-  opacity: .8;
+  #0266ca;
 }
 
 button:focus {
     outline: 3px solid var(--color-focus);
     outline-offset: -1px;
+}
+
+button:disabled {
+  background-color: var(--color-grey-dark) !important;
+  border-color: var(--color-grey-dark) !important;
+  color: var(--color-grey-dark) !important;
 }
 
 /***************************
