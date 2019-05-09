@@ -51,7 +51,7 @@
                     <!-- Header -->
                     <header id="top">
                         <a href="https://www.uu.se" class="uu-link">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/UU-logo-white.svg" class="uu-link-img" alt="Uppsala universitet">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/uu-logo-white.svg" class="uu-link-img" alt="Uppsala universitet">
                         </a>
                         <div class="site-header">
                             <a href="<?php echo esc_url( home_url() ); ?>" class="site-header-text"><?php echo get_bloginfo( 'name' ); ?></a>
