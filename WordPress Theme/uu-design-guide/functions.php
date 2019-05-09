@@ -462,3 +462,17 @@ function uu_style_sheets() {
 }
 
 add_action('wp_enqueue_scripts', 'uu_style_sheets'); // Add Theme Stylesheet
+
+
+/* Allow comments if on UU net */
+
+function comments_open_for_uu_net( $open, $post_id ) {
+
+    if ( substr( $_SERVER['REMOTE_ADDR'], 0, 8 ) != '130.238.' ) {
+        $open = false;
+    }
+
+    return $open;
+}
+
+add_filter( 'comments_open', 'comments_open_for_uu_net', 10, 2 );

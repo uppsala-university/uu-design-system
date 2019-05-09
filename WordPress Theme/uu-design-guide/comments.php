@@ -5,7 +5,7 @@
 
 	<?php return; endif; ?>
 
-<?php if (have_comments()) : ?>
+<?php if (have_comments() && false) : ?>
 
 	<h2><?php comments_number(); ?></h2>
 
@@ -13,7 +13,7 @@
 		<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
 	</ul>
 
-<?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+<?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) && false ) : ?>
 
 	<p><?php _e( 'Comments are closed here.', 'html5blank' ); ?></p>
 
