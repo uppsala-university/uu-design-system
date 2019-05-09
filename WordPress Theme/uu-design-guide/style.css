@@ -11,6 +11,10 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
+label {
+	display: block;
+}
+
 .alignleft {
 	float: left;
 }
