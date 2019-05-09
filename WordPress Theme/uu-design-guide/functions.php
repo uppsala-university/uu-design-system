@@ -464,11 +464,12 @@ function uu_style_sheets() {
 add_action('wp_enqueue_scripts', 'uu_style_sheets'); // Add Theme Stylesheet
 
 
-/* Allow comments if on UU net */
+
+/*  - - - -             Comment handling                - - - - */
 
 function comments_open_for_uu_net( $open, $post_id ) {
-
-    if ( substr( $_SERVER['REMOTE_ADDR'], 0, 8 ) != '130.238.' ) {
+    // Only allow comments if on UU's net    
+    if ( substr( $_SERVER['REMOTE_ADDR'], 0, 8 ) != '130.238.' && false) {
         $open = false;
     }
 
@@ -476,3 +477,47 @@ function comments_open_for_uu_net( $open, $post_id ) {
 }
 
 add_filter( 'comments_open', 'comments_open_for_uu_net', 10, 2 );
+
+function custom_comment_field( $fields ) {
+    // Remove URL/Website field
+    unset($fields['url']);
+
+    // Move Comment field bellow other fields (name and email)
+    $commentField = $fields['comment'];
+    unset( $fields['comment'] );
+    $fields['comment'] = $commentField;
+
+    return $fields;
+}
+ 
+add_filter( 'comment_form_fields', 'custom_comment_field' );
+
+// define the comment_form_defaults callback 
+function filter_comment_form_defaults( $defaults ) { 
+    $defaults['comment_notes_before'] = "<p>Vi tar gärna emot feedback och förslag på förbättringar!</p>";
+    $defaults['title_reply'] = "Tyck till";
+    $defaults['label_submit'] = "Skicka";
+    $defaults['title_reply_before'] = '<h2 class="comment-reply-title">';
+    $defaults['title_reply_after'] = '</h2>';
+    $defaults['submit_button'] = '<input name="%1$s" type="submit" id="%2$s" class="%3$s button" value="%4$s" />';
+    return $defaults; 
+}
+         
+add_filter( 'comment_form_defaults', 'filter_comment_form_defaults', 10, 1 );
+ 
+function ajax_comment_handling() {
+    // just register for now, we will enqueue it below
+    wp_register_script( 'ajax_comment', get_stylesheet_directory_uri() . '/js/ajax-comment.js', array('jquery'), 1.0 );
+ 
+    // let's pass ajaxurl here, you can do it directly in JavaScript but sometimes it can cause problems, so better is PHP
+    wp_localize_script( 'ajax_comment', 'misha_ajax_comment_params', array(
+        'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php'
+    ) );
+ 
+    wp_enqueue_script( 'ajax_comment' );
+}
+
+add_action( 'wp_enqueue_scripts', 'ajax_comment_handling' );
+
+require_once( 'ajax-comment-handler.php' );
+
