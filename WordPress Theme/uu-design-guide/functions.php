@@ -468,8 +468,8 @@ add_action('wp_enqueue_scripts', 'uu_style_sheets'); // Add Theme Stylesheet
 /*  - - - -             Comment handling                - - - - */
 
 function comments_open_for_uu_net( $open, $post_id ) {
-    // Only allow comments if on UU's net    
-    if ( substr( $_SERVER['REMOTE_ADDR'], 0, 8 ) != '130.238.' && false) {
+    // Only allow comments if on UU's net
+    if ( substr( $_SERVER['REMOTE_ADDR'], 0, 8 ) != '130.238.' && ! in_array( $_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'] ) ) {
         $open = false;
     }
 
