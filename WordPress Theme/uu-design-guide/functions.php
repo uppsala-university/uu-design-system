@@ -480,9 +480,12 @@ add_filter( 'comments_open', 'comments_open_for_uu_net', 10, 2 );
 
 function custom_comment_field( $fields ) {
     // Remove URL/Website field
-    unset($fields['url']);
+    unset( $fields['url'] );
+    unset( $fields['author'] );
+    unset( $fields['email'] );
 
     // Move Comment field bellow other fields (name and email)
+    // ... well we remove name and email fields so this could actually be removed
     $commentField = $fields['comment'];
     unset( $fields['comment'] );
     $fields['comment'] = $commentField;
