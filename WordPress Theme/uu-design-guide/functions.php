@@ -455,7 +455,7 @@ add_filter('body_class', 'uu_body_classes');
 
 // Style sheets
 function uu_style_sheets() {
-        wp_register_style( 'uu-design-system-style', 'https://raw.githack.com/uppsala-university/uu-design-system/master/CSS/uu-design-system.css', array(), date( 'Ymdhis' ), 'all');
+        wp_register_style( 'uu-design-system-style', get_stylesheet_directory_uri() . '/CSS/uu-design-system.css', array(), date( 'Ymdhis' ), 'all');
         wp_enqueue_style( 'uu-design-system-style' ); 
         wp_register_style( 'wp-style', get_stylesheet_directory_uri() . '/style.css', array(), date( 'Ymdhis' ), 'all');
         wp_enqueue_style( 'wp-style' ); 

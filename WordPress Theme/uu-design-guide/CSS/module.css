@@ -1,0 +1,301 @@
+/**********************************
+    Modules
+***********************************/
+/* Left column */
+.column-left {
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.column-left nav {
+    padding-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {	
+    .column-left {	
+        min-height: 100vh;	
+    }    	
+}	
+
+.toolbar {
+    position: relative;
+    z-index: 1;
+}
+
+.toolbar + .column-left {
+    margin-top: -30px;
+    padding-top: 30px;
+}
+
+/* Header */
+.uu-link-img {
+	margin-top: 1em;
+	width: 150px;
+}
+
+.site-header {
+    margin: 1em 0;
+    border-bottom: .5px solid #000;
+    padding-bottom: 1em;
+}
+
+.background-dark .site-header {
+	border-color: #fff;	
+}
+
+.site-header-text {
+    color: var(--color-grey-dark);
+    font-family: "BerlingRoman", serif;
+    font-size: 1.5rem;
+    letter-spacing: .05em;
+    text-decoration: none;
+}
+
+/* Navigation */
+.nav {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-sub-menu {
+    padding-left: 1.5em;
+}
+
+.current-menu-item .nav-link{
+	font-weight: 500;
+}
+.current-menu-item ul li a.nav-link{
+	font-weight: 300;
+}
+
+/**********************************
+     Button variants 
+**********************************/
+/* Outlined buttons */
+.button-outline {
+    background-color: #fff;
+    color: var(--color-link);
+}
+
+.button-outline:hover {
+    color: #fff;
+}
+
+/* Text buttons */
+.button-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-link);
+}
+
+.button-text:hover {
+    color: #fff;
+}
+
+/* Dangerous buttons */
+.button-danger,
+.button-danger:hover {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+    color: #fff;
+}
+
+.button-danger.button-outline:not(:hover) {
+    background-color: transparent;
+    color: var(--color-danger);
+}
+
+.button-danger.button-text:not(:hover) {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-danger);
+}
+
+/* Buttons with icons */
+.button-icon::before {
+    background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: bottom;
+    width: 24px;
+}
+
+.button-icon-right::after {
+    background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-left: 8px;
+    vertical-align: bottom;
+    width: 24px;
+}
+
+/* Buttons without text */
+.button-icon:empty::before,
+.button-icon-right:empty::after {
+    margin: 0;
+}
+
+/* Blue icons for outlined and text buttons */
+.button-outline.button-icon:not(:hover)::before,
+.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.3) sepia(.5) hue-rotate(170deg) saturate(9);
+}
+
+/* Red icons for danger buttons  */
+.button-danger.button-outline.button-icon:not(:hover)::before,
+.button-danger.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.2) sepia(1) hue-rotate(0deg) saturate(16);
+}
+
+/* Icons */
+
+/* What does the arrows mean? Change the class names according to that */
+.icon-up-circle::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-circle-chevron-up-24px-white.svg');
+}
+
+.icon-down-circle::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-circle-chevron-down-24px-white.svg');
+}
+
+/* Arrows to the right can be positioned before or after */
+.icon-right-circle::after,
+.icon-right-circle::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-circle-chevron-right-24px-white.svg');
+}
+
+.icon-left-circle::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-circle-chevron-left-24px-white.svg');
+}
+
+.icon-up::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-chevron-up-24px-white.svg');
+}
+
+/* Arrows to the right can be positioned before or after */
+.icon-right::after,
+.icon-right::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-chevron-right-24px-white.svg');
+}
+
+.icon-down::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-chevron-down-24px-white.svg');
+}
+
+.icon-left::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-chevron-left-24px-white.svg');
+}
+
+/* Previous/back and next buttons */
+.icon-next::after,
+.icon-next::before {
+    /* Arrows to the right can be positioned before or after */
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-arrow-forward-24px-white.svg');
+}
+
+.icon-back::before,
+.icon-previous::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-arrow-back-24px-white.svg');
+}
+
+/* What does plus and minus mean? Change the class names according to that */
+.icon-plus::before {
+      background-image: url('http://files.webb.uu.se/uploader/1650/plus-circle-outline-24px-white.svg');
+}
+
+.icon-minus::before {
+      background-image: url('http://files.webb.uu.se/uploader/1650/minus-circle-outline-24px-white.svg');
+}
+
+.icon-clear::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-clear-24px-white.svg')
+}
+
+.icon-attach::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-attach-file-24px-white.svg')
+}
+
+.icon-cancel::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-cancel-24px-white.svg')
+}
+
+.icon-delete::before {
+     background-image: url('http://files.webb.uu.se/uploader/1650/outline-delete-24px-white.svg')
+}
+
+.icon-menu::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-menu-24px-white.svg')
+}
+
+.icon-listen::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-headset-24px-white.svg')
+}
+
+.icon-language::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-language-24px.svg')
+}
+
+.icon-profile::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-people-24px.svg')
+}
+
+.icon-settings::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-settings-24px.svg')
+}
+
+.icon-edit::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-edit-24px-white.svg')
+}
+
+.icon-like::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-favorite-border-24px-white.svg')
+}
+
+.icon-star::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/outline-star-24px.svg')
+}
+
+.icon-star-filled::before {
+    background-image: url('http://files.webb.uu.se/uploader/1650/baseline-star-24px.svg')
+}
+
+/**********************************
+     Forms 
+**********************************/
+.form-group {
+    margin-bottom: 1em;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.label-required::after {
+    content: ' *';
+    color: var(--color-danger);
+}
+
+.form-errors-list {
+    color: var(--color-danger);
+    list-style: none;
+    padding: 0;
+}
+
+.form-input-success {
+    background-color: #DFF0D8; /* create variable */
+    border-color: #D6E9C6; /* create variable */
+}
+
+.form-input-error {
+    background-color: #F2DEDE; /* create variable */
+    border-color: #EED3D7; /* create variable */
+}
