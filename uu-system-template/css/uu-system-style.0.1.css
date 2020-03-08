@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/**********************************
+    UU Bootstrap Theme
+***********************************/
+/****************************
+    Background colors
+    http://getbootstrap.com/docs/4.0/utilities/colors/
+****************************/
+.bg-dark a:hover, .bg-dark a:visited {
+  color: #fff;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -25,8 +36,8 @@
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
+  --light: #f2f2f2;
+  --dark: #333;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1676,41 +1687,41 @@ pre code {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #fdfdfe;
+  background-color: #fbfbfb;
 }
 .table-light th,
 .table-light td,
 .table-light thead th,
 .table-light tbody + tbody {
-  border-color: #fbfcfc;
+  border-color: #f8f8f8;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ececf6;
+  background-color: #eeeeee;
 }
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ececf6;
+  background-color: #eeeeee;
 }
 
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #c6c8ca;
+  background-color: #c6c6c6;
 }
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #95999c;
+  border-color: #959595;
 }
 
 .table-hover .table-dark:hover {
-  background-color: #b9bbbe;
+  background-color: #b9b9b9;
 }
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #b9bbbe;
+  background-color: #b9b9b9;
 }
 
 .table-active,
@@ -2458,56 +2469,56 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 .btn-light:hover {
   color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+  background-color: #dfdfdf;
+  border-color: #d9d9d9;
 }
 .btn-light:focus, .btn-light.focus {
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(211, 211, 212, 0.5);
 }
 .btn-light.disabled, .btn-light:disabled {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
   color: #212529;
-  background-color: #dae0e5;
-  border-color: #d3d9df;
+  background-color: #d9d9d9;
+  border-color: #d2d2d2;
 }
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(211, 211, 212, 0.5);
 }
 
 .btn-dark {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #333;
+  border-color: #333;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #23272b;
-  border-color: #1d2124;
+  background-color: #202020;
+  border-color: #1a1a1a;
 }
 .btn-dark:focus, .btn-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5);
 }
 .btn-dark.disabled, .btn-dark:disabled {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #333;
+  border-color: #333;
 }
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #1d2124;
-  border-color: #171a1d;
+  background-color: #1a1a1a;
+  border-color: #131313;
 }
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5);
 }
 
 .btn-outline-primary {
@@ -2661,53 +2672,53 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 .btn-outline-light:focus, .btn-outline-light.focus {
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(242, 242, 242, 0.5);
 }
 .btn-outline-light.disabled, .btn-outline-light:disabled {
-  color: #f8f9fa;
+  color: #f2f2f2;
   background-color: transparent;
 }
 .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(242, 242, 242, 0.5);
 }
 
 .btn-outline-dark {
-  color: #343a40;
-  border-color: #343a40;
+  color: #333;
+  border-color: #333;
 }
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #333;
+  border-color: #333;
 }
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5);
 }
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
-  color: #343a40;
+  color: #333;
   background-color: transparent;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #333;
+  border-color: #333;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5);
 }
 
 .btn-link {
@@ -4523,28 +4534,28 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 .badge-light {
   color: #212529;
-  background-color: #f8f9fa;
+  background-color: #f2f2f2;
 }
 a.badge-light:hover, a.badge-light:focus {
   color: #212529;
-  background-color: #dae0e5;
+  background-color: #d9d9d9;
 }
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(242, 242, 242, 0.5);
 }
 
 .badge-dark {
   color: #fff;
-  background-color: #343a40;
+  background-color: #333;
 }
 a.badge-dark:hover, a.badge-dark:focus {
   color: #fff;
-  background-color: #1d2124;
+  background-color: #1a1a1a;
 }
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5);
 }
 
 .jumbotron {
@@ -4665,27 +4676,27 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-light {
-  color: #818182;
-  background-color: #fefefe;
-  border-color: #fdfdfe;
+  color: #7e7e7e;
+  background-color: #fcfcfc;
+  border-color: #fbfbfb;
 }
 .alert-light hr {
-  border-top-color: #ececf6;
+  border-top-color: #eeeeee;
 }
 .alert-light .alert-link {
-  color: #686868;
+  color: #656565;
 }
 
 .alert-dark {
-  color: #1b1e21;
-  background-color: #d6d8d9;
-  border-color: #c6c8ca;
+  color: #1b1b1b;
+  background-color: #d6d6d6;
+  border-color: #c6c6c6;
 }
 .alert-dark hr {
-  border-top-color: #b9bbbe;
+  border-top-color: #b9b9b9;
 }
 .alert-dark .alert-link {
-  color: #040505;
+  color: #020202;
 }
 
 @keyframes progress-bar-stripes {
@@ -4996,31 +5007,31 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-light {
-  color: #818182;
-  background-color: #fdfdfe;
+  color: #7e7e7e;
+  background-color: #fbfbfb;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #818182;
-  background-color: #ececf6;
+  color: #7e7e7e;
+  background-color: #eeeeee;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
-  background-color: #818182;
-  border-color: #818182;
+  background-color: #7e7e7e;
+  border-color: #7e7e7e;
 }
 
 .list-group-item-dark {
-  color: #1b1e21;
-  background-color: #c6c8ca;
+  color: #1b1b1b;
+  background-color: #c6c6c6;
 }
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #1b1e21;
-  background-color: #b9bbbe;
+  color: #1b1b1b;
+  background-color: #b9b9b9;
 }
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
-  background-color: #1b1e21;
-  border-color: #1b1e21;
+  background-color: #1b1b1b;
+  border-color: #1b1b1b;
 }
 
 .close {
@@ -5835,23 +5846,23 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f2f2f2 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #dae0e5 !important;
+  background-color: #d9d9d9 !important;
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #333 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: #1a1a1a !important;
 }
 
 .bg-white {
@@ -5927,11 +5938,11 @@ button.bg-dark:focus {
 }
 
 .border-light {
-  border-color: #f8f9fa !important;
+  border-color: #f2f2f2 !important;
 }
 
 .border-dark {
-  border-color: #343a40 !important;
+  border-color: #333 !important;
 }
 
 .border-white {
@@ -9501,19 +9512,19 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #f2f2f2 !important;
 }
 
 a.text-light:hover, a.text-light:focus {
-  color: #cbd3da !important;
+  color: #cccccc !important;
 }
 
 .text-dark {
-  color: #343a40 !important;
+  color: #333 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: #121416 !important;
+  color: #0d0d0d !important;
 }
 
 .text-body {
@@ -9655,11 +9666,19 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body {
-  font-family: "Helvetica Neue", Arial, Sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
+/*  Base rules -
+    A Base rule is applied to an element using an element selector, a
+    descendent selector, or a child selector, along with any pseudo-classes.
+    It doesn't include any class or ID selectors. It is defining the default
+    styling for how that element should look in all occurrences on the page. */
+:root {
+  --color-grey-dark: #333333;
+  --color-grey: #e5e5e5;
+  --color-grey-light: #f2f2f2;
+  --color-link: #0555a4;
+  --color-focus: #89b9ea;
+  --color-danger: #990000;
+  --color-success: #00700F;
 }
 
 /****************************
@@ -9667,11 +9686,18 @@ body {
 ****************************/
 @font-face {
   font-family: "BerlingRoman";
-  src: url("https://files.webb.uu.se/uploader/1650/berlingroman-webfonteot.eot");
-  src: url("https://files.webb.uu.se/uploader/1650/berlingroman-webfonteot.eot#iefix") format("embedded-opentype"), url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontwoff.woff") format("woff"), url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontttf.ttf") format("truetype"), url("https://files.webb.uu.se/uploader/1650/berlingroman-webfontsvg.svg") format("svg");
+  src: url("https://live.webb.uu.se/digitalAssets/207/c_207717-l_3-k_berlingroman-webfonteot.eot");
+  src: url("https://live.webb.uu.se/digitalAssets/207/c_207717-l_3-k_berlingroman-webfonteot.eot#iefix") format("embedded-opentype"), url("https://live.webb.uu.se/digitalAssets/207/c_207717-l_3-k_berlingroman-webfontwoff.woff") format("woff"), url("https://live.webb.uu.se/digitalAssets/207/c_207717-l_3-k_berlingroman-webfontttf.ttf") format("truetype"), url("https://live.webb.uu.se/digitalAssets/207/c_207717-l_3-k_berlingroman-webfontsvg.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+body {
+  font-family: "Helvetica Neue", Arial, Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 /***************************
   Headlines, paragraphs etc.
 ***************************/
@@ -9716,21 +9742,22 @@ p, dl, ol, ul {
 }
 
 /***************************
-  Focus
+    Focus
 ***************************/
 :focus {
   outline: 3px solid var(--color-focus);
 }
 
 /***************************
-  Links
+    Links
 ***************************/
 a {
   color: var(--color-link);
+  text-decoration: underline;
 }
 
 /***************************
-  Buttons
+    Buttons
 ***************************/
 button,
 .button,
@@ -9773,7 +9800,7 @@ button[disabled] {
 }
 
 /***************************
-  Links
+    Links
 ***************************/
 input {
   border: 1px solid #000;
@@ -9781,10 +9808,179 @@ input {
   padding: 0.7rem 1rem;
 }
 
-/* 	This file should only contain imports and no styling. All styling 
-should instead be put in seperate files in the modules folder */
-.fan-vad-det-funkar-bra {
-  color: #f00;
+/*  Layout rules -
+    Positioning, sizing and other styling of *major* structural layout elements (eg. header, main navigation, 
+    footer, main content) are layout rules and belong here. Also rules for a grid system would
+    fit here. Think of Layout rules as the part of the CSS that should make a page keep it's 
+    main look and feel if all other CSS was removed (at least if you would squint really hard). */
+.layout-logo {
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.layout-header {
+  background-color: var(--color-grey-light);
+  padding-bottom: 1em;
+}
+
+.layout-header-text {
+  display: inline-block;
+  font-family: "BerlingRoman", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  margin-top: 70px;
+  text-decoration: none;
+}
+.layout-header-text, .layout-header-text:hover {
+  color: var(--color-grey-dark);
+}
+
+.layout-header-topbar {
+  min-height: 1.5em;
+}
+
+.layout-main-container {
+  margin-top: 50px;
+}
+
+.layout-footer {
+  background-color: var(--color-grey-dark);
+  margin-top: 100px;
+  min-height: 100px;
+}
+
+/*  This file should only contain imports and no styling. All styling 
+    should instead be placed in seperate files in the modules folder. */
+/* Outlined buttons */
+.button-outline {
+  background-color: #fff;
+  color: var(--color-link);
+}
+
+.button-outline:hover {
+  color: #fff;
+}
+
+/* Text buttons */
+.button-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-link);
+}
+
+.button-text:hover {
+  color: #fff;
+}
+
+/* Dangerous buttons */
+.button-danger,
+.button-danger:hover {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  color: #fff;
+}
+
+.button-danger.button-outline:not(:hover) {
+  background-color: transparent;
+  color: var(--color-danger);
+}
+
+.button-danger.button-text:not(:hover) {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-danger);
+}
+
+/* Buttons with icons */
+.button-icon::before {
+  background-size: 24px;
+  content: " ";
+  display: inline-block;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: bottom;
+  width: 24px;
+}
+
+.button-icon-right::after {
+  background-size: 24px;
+  content: " ";
+  display: inline-block;
+  height: 24px;
+  margin-left: 8px;
+  vertical-align: bottom;
+  width: 24px;
+}
+
+/* Buttons without text */
+.button-icon:empty::before,
+.button-icon-right:empty::after {
+  margin: 0;
+}
+
+/* Blue icons for outlined and text buttons */
+.button-outline.button-icon:not(:hover)::before,
+.button-text.button-icon:not(:hover)::before {
+  filter: brightness(0.3) sepia(0.5) hue-rotate(170deg) saturate(9);
+}
+
+/* Red icons for danger buttons  */
+.button-danger.button-outline.button-icon:not(:hover)::before,
+.button-danger.button-text.button-icon:not(:hover)::before {
+  filter: brightness(0.2) sepia(1) hue-rotate(0deg) saturate(16);
+}
+
+/**********************************
+    Code block
+***********************************/
+.code-block {
+  background-color: var(--light-grey);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 0.5em 0 1em 0;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.code-comment {
+  color: #888;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.label-required::after {
+  content: " *";
+  color: var(--color-danger);
+}
+
+.form-errors-list {
+  color: var(--color-danger);
+  list-style: none;
+  padding: 0;
+}
+
+.form-input-success {
+  background-color: #DFF0D8;
+  /* create variable */
+  border-color: #D6E9C6;
+  /* create variable */
+}
+
+.form-input-error {
+  background-color: #F2DEDE;
+  /* create variable */
+  border-color: #EED3D7;
+  /* create variable */
 }
 
 /* What does the arrows mean? Change the class names according to that */
@@ -9897,4 +10093,62 @@ should instead be put in seperate files in the modules folder */
   background-image: url("http://files.webb.uu.se/uploader/1650/baseline-star-24px.svg");
 }
 
-/*# sourceMappingURL=uu-system-style.css.map */
+/**********************************
+    UU Logo
+***********************************/
+.logo {
+  background-color: #fff;
+  display: inline-block;
+  height: 122px;
+  width: 122px;
+}
+
+.logo-tag-style {
+  border: 0.1px solid #eee;
+  padding: 50px 5px 5px 5px;
+  height: auto;
+}
+
+.logo-shadow {
+  border: 0;
+  box-shadow: 0px 0px 3px #bbb;
+}
+
+.logo-pull-up {
+  margin-top: -1.7rem;
+}
+
+.nav {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.nav-link {
+  border-bottom: 1px solid #eee;
+  color: black;
+  text-decoration: none;
+}
+
+.nav li:last-child .nav-link {
+  border-bottom: 0;
+}
+
+.nav-sub-menu {
+  padding-left: 1.5em;
+}
+
+.current-menu-item .nav-link {
+  font-weight: 500;
+}
+
+.current-menu-item ul li a.nav-link {
+  font-weight: 300;
+}
+
+/*  State rules -
+    A state is something that augments and overrides all other styles. 
+    For example, an accordion section may be in a collapsed or expanded state. 
+    A message may be in a success or error state. */
+
+/*# sourceMappingURL=uu-system-style.0.1.css.map */
