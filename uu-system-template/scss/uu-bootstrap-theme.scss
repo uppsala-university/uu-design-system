@@ -1,0 +1,42 @@
+/**********************************
+    UU Bootstrap Theme
+***********************************/
+
+/****************************
+    Background colors
+    http://getbootstrap.com/docs/4.0/utilities/colors/
+****************************/
+
+$colors: (
+  //"blue":
+  //"indigo":
+  //"purple":
+  //"pink":
+  //"red":
+  //"orange":
+  //"yellow":
+  //"green":
+  //"teal":
+  //"cyan":
+  //"white":
+  //"gray":
+  //"gray-dark":
+);
+
+$theme-colors: (
+    //"danger":
+    "dark": #333,
+    "light": #f2f2f2,
+    //"info":
+    //"primary":
+    //"secondary":
+    //"success":
+    //"warning":
+);
+
+.bg-dark a {
+    &:hover,
+    &:visited {
+        color: #fff;
+    }
+}

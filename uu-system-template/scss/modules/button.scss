@@ -1,0 +1,78 @@
+/* Outlined buttons */
+.button-outline {
+    background-color: #fff;
+    color: var(--color-link);
+}
+
+.button-outline:hover {
+    color: #fff;
+}
+
+/* Text buttons */
+.button-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-link);
+}
+
+.button-text:hover {
+    color: #fff;
+}
+
+/* Dangerous buttons */
+.button-danger,
+.button-danger:hover {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+    color: #fff;
+}
+
+.button-danger.button-outline:not(:hover) {
+    background-color: transparent;
+    color: var(--color-danger);
+}
+
+.button-danger.button-text:not(:hover) {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-danger);
+}
+
+/* Buttons with icons */
+.button-icon::before {
+    background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: bottom;
+    width: 24px;
+}
+
+.button-icon-right::after {
+    background-size: 24px;
+    content: ' ';
+    display: inline-block;
+    height: 24px;
+    margin-left: 8px;
+    vertical-align: bottom;
+    width: 24px;
+}
+
+/* Buttons without text */
+.button-icon:empty::before,
+.button-icon-right:empty::after {
+    margin: 0;
+}
+
+/* Blue icons for outlined and text buttons */
+.button-outline.button-icon:not(:hover)::before,
+.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.3) sepia(.5) hue-rotate(170deg) saturate(9);
+}
+
+/* Red icons for danger buttons  */
+.button-danger.button-outline.button-icon:not(:hover)::before,
+.button-danger.button-text.button-icon:not(:hover)::before {
+    filter: brightness(0.2) sepia(1) hue-rotate(0deg) saturate(16);
+}

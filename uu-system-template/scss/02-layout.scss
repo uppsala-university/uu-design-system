@@ -1,0 +1,43 @@
+/*  Layout rules -
+    Positioning, sizing and other styling of *major* structural layout elements (eg. header, main navigation, 
+    footer, main content) are layout rules and belong here. Also rules for a grid system would
+    fit here. Think of Layout rules as the part of the CSS that should make a page keep it's 
+    main look and feel if all other CSS was removed (at least if you would squint really hard). */
+
+.layout-logo {
+    margin-left: 50px;
+    position: absolute;
+    top: 0;
+}
+
+.layout-header {
+    background-color: var(--color-grey-light);
+    padding-bottom: 1em;
+}
+
+.layout-header-text {
+    &, &:hover {
+        color: var(--color-grey-dark);
+    }
+    display: inline-block;
+    font-family: "BerlingRoman", serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    margin-top: 70px;
+    text-decoration: none;
+}
+
+.layout-header-topbar {
+    min-height: 1.5em;
+}
+
+.layout-main-container {
+    margin-top: 50px;
+}
+
+.layout-footer {
+    background-color: var(--color-grey-dark);
+    margin-top: 100px;
+    min-height: 100px;
+}
