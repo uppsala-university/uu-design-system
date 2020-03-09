@@ -524,3 +524,9 @@ add_action( 'wp_enqueue_scripts', 'ajax_comment_handling' );
 
 require_once( 'ajax-comment-handler.php' );
 
+
+/* Remove IP from comments  */
+function remove_ip_from_comments( $comment_author_ip ) {
+    return '';
+}
+add_filter( 'pre_comment_user_ip', 'remove_ip_from_comments' );
