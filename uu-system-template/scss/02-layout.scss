@@ -4,15 +4,16 @@
     fit here. Think of Layout rules as the part of the CSS that should make a page keep it's 
     main look and feel if all other CSS was removed (at least if you would squint really hard). */
 
-.layout-logo {
-    margin-left: 50px;
-    position: absolute;
-    top: 0;
-}
-
 .layout-header {
     background-color: var(--color-grey-light);
+    height: 185px;
     padding-bottom: 1em;
+}
+
+/* förbjudet! hur ska vi lösa sådant här? */
+.layout-header-image {
+    background-image: url('../theme-system/img/header.png');
+    background-size: 100vw;
 }
 
 .layout-header-text {

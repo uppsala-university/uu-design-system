@@ -2,18 +2,18 @@
 <html lang="sv">
 <head>
     <title>UU System Template</title>
-    <link rel="stylesheet" type="text/css" href="../css/uu-system-style-developement.css">
+    <link rel="stylesheet" type="text/css" href="../theme-uu/uu-system-style-developement.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="layout-header">
+    <header class="layout-header layout-header-image">
         <div class="layout-header-topbar bg-dark">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <a href="https://uu.se" class="layout-logo logo logo-tag-style logo-shadow logo-pull-up">
-                        <img src="http://designsystem.webb.uu.se/wp-content/themes/uu-design-guide/img/uu-logo-red.svg">
+                        <img src="../theme-uu/img/uu-logo-red.svg">
                     </a>
                 </div>
                 <div class="col">
@@ -24,7 +24,8 @@
     </header>
 
     <div class="container layout-main-container">
-        <div class="row">
+        <div class="row justify-content-md-center">
+            <!-- Remove this if the system dont need a navigation -->
             <nav class="col-md-3">
                 <ul class="nav flex-column">
                     <li><a href="#" class="nav-link">Introduktion</a></li>
@@ -62,7 +63,7 @@
                 <h2>Komma igång</h2>
                 <p>
                     Efter att SASS installeras görs all utveckling i filerna under scss efter att SASS startats:
-                    <code class="code-block">sass --watch uu-system-style.scss ../css/uu-system-style-developement.css</code>
+                    <code class="code-block">sass --watch uu-system-style.scss ../theme-uu/uu-system-style-developement.css</code>
                     Eller genom filen watch.sh:
                     <code class="code-block">sh watch.sh <span class="code-comment">// Mac</span>
 batch watch.sh <span class="code-comment">// PC</span></code>
@@ -78,7 +79,18 @@ batch watch.sh <span class="code-comment">// PC</span></code>
                     en mer uppdelad och bättre strukturerad uppsättning filer.
                 </p>
                 <p>
-                    Vi får nog diskutera lite kring vilka delar av SASS vi ska använda.
+                    Vi får nog diskutera lite kring vilka delar av SASS vi ska använda men hittills har vi bestämt: 
+                    <ul>
+                        <li>
+                            Att vi använder SASS-variabler iställer för CSS-variabler (eftersom det saknas stöd i IE)
+                        </li>
+                        <li>
+                            Att vi nästlar max en nivå 
+                        </li>
+                        <li>
+                            Att vi inte nästlar klasser i klasser (och såklart inte ID!)
+                        </li>
+                    </ul>
                 </p>
 
                 <h2>Systemspecifik CSS</h2>
