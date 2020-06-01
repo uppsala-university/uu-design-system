@@ -5,8 +5,6 @@
     main look and feel if all other CSS was removed (at least if you would squint really hard). */
 
 .layout-header {
-    background-color: var(--color-grey-light);
-    height: 185px;
     padding-bottom: 1em;
 }
 
@@ -35,6 +33,10 @@
 
 .layout-main-container {
     margin-top: 50px;
+}
+
+.layout-main-container-small-system {
+    margin-top: 87px;
 }
 
 .layout-footer {
