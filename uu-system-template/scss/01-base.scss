@@ -6,12 +6,16 @@
 
 :root {
     --color-black-transparent: #000000b8;
+    --color-grey-darker: #131313;
     --color-grey-dark: #333333;
     --color-grey: #e5e5e5;
     --color-grey-light: #f2f2f2;
     --color-link: #0555a4;
+    --color-button: #0555a4;
+    --color-button-hover: #014284;
     --color-focus: #89b9ea;
     --color-danger: #990000;
+    --color-danger-darker: #730000;
     --color-success: #00700F;
 }
 
@@ -101,8 +105,8 @@ button,
 .button,
 button:hover,
 .button:hover {
-    background-color: var(--color-link);
-    border: 3px solid var(--color-link);
+    background-color: var(--color-button);
+    border: 3px solid var(--color-button);
     border-radius: 4px;
     box-sizing: border-box;
     color: #fff;
@@ -120,9 +124,10 @@ button:hover,
     -moz-appearance: none;
 }
 
-button:hover,
+button:hover, 
 .button:hover {
-    background-color: #0266ca;
+    background-color:var(--color-button-hover);
+    border-color: var(--color-button-hover);
 }
 
 button:focus {
@@ -146,3 +151,4 @@ input {
     font-size: 1rem;
     padding: .7rem 1rem;
 }
+

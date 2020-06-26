@@ -9673,12 +9673,16 @@ h3 {
     styling for how that element should look in all occurrences on the page. */
 :root {
   --color-black-transparent: #000000b8;
+  --color-grey-darker: #131313;
   --color-grey-dark: #333333;
   --color-grey: #e5e5e5;
   --color-grey-light: #f2f2f2;
   --color-link: #0555a4;
+  --color-button: #0555a4;
+  --color-button-hover: #014284;
   --color-focus: #89b9ea;
   --color-danger: #990000;
+  --color-danger-darker: #730000;
   --color-success: #00700F;
 }
 
@@ -9764,8 +9768,8 @@ button,
 .button,
 button:hover,
 .button:hover {
-  background-color: var(--color-link);
-  border: 3px solid var(--color-link);
+  background-color: var(--color-button);
+  border: 3px solid var(--color-button);
   border-radius: 4px;
   box-sizing: border-box;
   color: #fff;
@@ -9784,7 +9788,8 @@ button:hover,
 
 button:hover,
 .button:hover {
-  background-color: #0266ca;
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-hover);
 }
 
 button:focus {
@@ -9818,37 +9823,49 @@ input {
   padding-bottom: 1em;
 }
 
-/* förbjudet! hur ska vi lösa sådant här? */
-.layout-header-image {
-  background-image: url("../theme-system/img/header.png");
-  background-size: 100vw;
-}
-
 .layout-header-text {
   display: inline-block;
   font-family: "BerlingRoman", serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 0.05em;
-  margin-bottom: 0;
-  margin-top: 70px;
+  margin: 1em 0;
+  text-align: center;
   text-decoration: none;
 }
 .layout-header-text, .layout-header-text:hover {
   color: var(--color-grey-dark);
 }
 
-.layout-header-topbar {
-  min-height: 1.5em;
+.layout-header {
+  background-color: var(--color-grey-light);
+  padding-bottom: 0;
+  margin-bottom: 2em;
 }
 
-.layout-main-container {
-  margin-top: 50px;
+/* Image in header */
+.layout-header-image {
+  background-image: url("../theme-system/img/header.png");
+  background-size: 100vw;
 }
 
-.layout-main-container-small-system {
-  margin-top: 87px;
+.layout-header-image .layout-header-text {
+  background: var(--color-black-transparent);
+  color: #fff;
+  padding: 0.5em 0.75em;
+  margin: 0.5em 0;
 }
 
+/* Header - larger screens*/
+@media (min-width: 768px) {
+  .layout-header {
+    min-height: 130px;
+  }
+
+  .layout-header-text {
+    font-size: 1.5rem;
+  }
+}
+/* Footer */
 .layout-footer {
   background-color: var(--color-grey-dark);
   margin-top: 100px;
@@ -9895,6 +9912,11 @@ input {
   background-color: transparent;
   border-color: transparent;
   color: var(--color-danger);
+}
+
+.button-danger:hover {
+  background-color: var(--color-danger-darker);
+  border-color: var(--color-danger-darker);
 }
 
 /* Buttons with icons */
@@ -10097,6 +10119,10 @@ input {
   background-image: url("http://files.webb.uu.se/uploader/1650/baseline-star-24px.svg");
 }
 
+.icon-search::before {
+  background-image: url(http://files.webb.uu.se/uploader/1650/search-white.svg);
+}
+
 /**********************************
     UU Logo
 ***********************************/
@@ -10105,6 +10131,7 @@ input {
   display: inline-block;
   height: 122px;
   width: 122px;
+  max-width: 100%;
 }
 
 .logo-tag-style {
@@ -10115,12 +10142,21 @@ input {
 
 .logo-shadow {
   border: 0;
-  box-shadow: 0px 0px 3px #bbb;
+  box-shadow: 0 0 3px #bbb;
+}
+
+.logo-wrapper {
+  position: absolute;
+  z-index: 100000;
 }
 
 .logo-pull-up {
-  margin-top: -1.7rem;
-  margin-left: 50px;
+  margin-top: 0;
+}
+
+.logo-mobile {
+  height: 120px;
+  width: 120px;
 }
 
 .nav {
@@ -10151,9 +10187,30 @@ input {
   font-weight: 300;
 }
 
+.module-search {
+  margin: 0.5em 0;
+}
+
+.module-search-submit {
+  background: #131313;
+  border-color: #121212;
+}
+
 /*  State rules -
     A state is something that augments and overrides all other styles. 
     For example, an accordion section may be in a collapsed or expanded state. 
     A message may be in a success or error state. */
+/**/
+.is-bg-dark {
+  background-color: var(--color-grey-darker);
+}
+
+.is-bg-dark .button-text {
+  color: #fff;
+}
+
+.is-bg-dark .button-text.button-icon::before {
+  filter: none;
+}
 
 /*# sourceMappingURL=uu-system-style-developement.css.map */

@@ -2,3 +2,16 @@
     A state is something that augments and overrides all other styles. 
     For example, an accordion section may be in a collapsed or expanded state. 
     A message may be in a success or error state. */
+
+    /**/
+    .is-bg-dark {
+        background-color: var(--color-grey-darker);
+    }
+
+    .is-bg-dark .button-text {
+        color: #fff;
+    }
+   
+    .is-bg-dark .button-text.button-icon::before {
+        filter: none;
+    }

@@ -38,6 +38,11 @@
     color: var(--color-danger);
 }
 
+.button-danger:hover {
+    background-color: var(--color-danger-darker);
+    border-color: var(--color-danger-darker);  
+}
+
 /* Buttons with icons */
 .button-icon::before {
     background-size: 24px;
