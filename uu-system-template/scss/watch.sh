@@ -1,1 +1,0 @@
-sass --watch uu-system-style.scss ../css/uu-system-style-developement.css

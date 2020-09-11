@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8"/>
+    <title>UU System Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="theme-uu/uu-system-style-developement.css">
+    <link rel="stylesheet" type="text/css" href="theme-system/system.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    /* Det här behöver fixas och kan förhoppningsvis tas bort*/
+    /* Mobile navigation */
+    .navbar-collapse[aria-expanded="true"],
+    .collapse[aria-expanded="true"] {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <header class="layout-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 logo-wrapper">
+                    <a href="https://uu.se" class="layout-logo logo-link">
+                        <!-- Logo desktop -->
+                        <img src="http://designsystem.webb.uu.se/wp-content/themes/uu-design-guide/img/uu-logo-red.svg" class="is-only-visible-on-desktop" />
+                        <!-- Logo mobile -->
+                        <img src="https://designsystem.webb.uu.se/wp-content/themes/uu-design-guide/img/uu-logo-white.svg" class="is-only-visible-on-mobile" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toolbar top -->
+        <div class="container-fluid sticky-top is-bg-dark">
+            <div class="row">
+                <div class="container">
+                    <nav class="row justify-content-end align-items-center">
+                        <div class="col-sm-9 text-right">
+                            <a class="button button-text" href="#">Logga in</a>
+                                <button class="d-lg-none d-lx-none button-icon icon-search icon-white button-text" type="button" data-toggle="collapse" data-target="#header-search" aria-controls="header-search" aria-expanded="false" aria-label="Visa och dölj sök">
+
+                                </button>
+                                <button class="d-lg-none d-lx-none button-icon icon-menu icon-white button-text" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Meny">
+
+                                </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- To use a background image add the class 'layout-header-image' to the header tag and put an image called 'header.png' in theme-system/img -->
+        <div class="container-fluid layout-header layout-header-image">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <!-- Remove for smaller systems -->
+                        <div class="col">
+                            <div class="row justify-content-end">
+                                <div class="d-lg-block module-search" id="header-search">
+                                    <form class="module-search" role="search">
+                                        <input type="search" aria-label="Sök" class="module-search-input">
+                                        <button type="submit" class="module-search-submit">Sök</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="col-md-9">
+                                    <a href="index.html" class="layout-header-text">Uppsala universitets systemmall</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container layout-main-container">
+        <div class="row">
+            <!-- Remove for smaller systems -->
+            <div class="col-md-3">
+                <nav class="navbar-expand-lg">
+
+                    <div class="collapse navbar-collapse" id="navigation">
+
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link">Introduktion</a></li>
+                        <li><a href="#" class="nav-link">Komponenter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="col-lg-9">
+                <h1>Komponenter</h1>
+                <h2>Knappar</h2>
+                <p>.button</p>
+                <button class="button-primary">Registrera</button>
+                <button class="button-outline">Öppna</button>
+                <button class="button-danger">Ta bort</button>
+                <hr>
+                <p>.btn</p>
+                <button class="btn-primary">Registrera</button>
+                <button class="btn-outline">Öppna</button>
+                <button class="btn-danger">Ta bort</button>
+            </main>
+        </div>
+    </div>
+
+    <footer class="layout-footer">
+
+    </footer>
+</body>
+</html>
